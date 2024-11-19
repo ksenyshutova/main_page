@@ -1,0 +1,11 @@
+.footer {
+    background-color: $color-blue;
+    opacity: 0.05;
+    width: 100%;
+    min-height: 295px;
+    margin-top: 80px;
+
+    @include mobile-above {
+        margin-bottom: 20px;
+    }
+}

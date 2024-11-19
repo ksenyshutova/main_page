@@ -1,0 +1,14 @@
+.header {
+    background-image: url('../images/background.svg');
+    background-size: cover;
+    position: relative;
+    min-height: 150px;
+    background-position: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+    @include mobile-above {
+        min-height: 250px;
+        margin-top: 70px;
+    }
+}

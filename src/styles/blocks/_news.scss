@@ -1,0 +1,50 @@
+.news {
+    margin: 60px 0;
+
+    @include mobile-above {
+        margin: 88px 0 60px;
+    }
+
+    &__block {
+        @include mobile-above {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+
+        @include mobile {
+            &:not(:last-child) {
+                border-bottom: 1px solid $color-description;
+                margin-bottom: 10.5px;
+            }
+        }
+
+        @include mobile-above {
+            width: 30%;
+        }
+    }
+
+    &__title {
+        @include mobile-above {
+            text-align: start !important;
+        }
+    }
+
+    &__subtitle {
+        font-family: 'Futura-Book';
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    &__description {
+        color: $color-description;
+        margin-bottom: 9.5px;
+    }
+
+}

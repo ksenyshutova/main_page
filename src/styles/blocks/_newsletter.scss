@@ -1,0 +1,58 @@
+.newsletter {
+    background-color: $color-light;
+    padding: $container-padding-x;
+
+    @include mobile-above {
+        margin: 0 42px;
+        border-radius: $border-radius;
+        padding: 33px 148px 50px;
+    }
+
+    &__title {
+        text-align: center;
+
+        @include mobile-above {
+            text-align: start;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+
+        @include mobile-above {
+            gap: 20px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__form {
+        width: 100%;
+
+        @include mobile-above {
+            width: 63%;
+        }
+    }
+
+    &__email {
+        background-color: $color-grey;
+        margin-bottom: 21px;
+        padding: 13px 32px;
+
+        @include mobile-above {
+            margin-bottom: 0;
+        }
+    }
+
+    &__button {
+        background-color: $color-blue;
+        color: $color-light;
+        margin-bottom: 50px;
+
+        @include mobile-above {
+            width: 40%;
+            margin-bottom: 0;
+        }
+    }
+}

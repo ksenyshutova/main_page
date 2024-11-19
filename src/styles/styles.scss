@@ -1,0 +1,14 @@
+@import 'fonts',
+'globals',
+'media',
+'normalize',
+'utils',
+'variables';
+
+@import './blocks/header',
+'./blocks/hero',
+'./blocks/button',
+'./blocks/news',
+'./blocks/title',
+'./blocks/newsletter',
+'./blocks/footer';
